@@ -53,4 +53,18 @@ public class Alumno
         return sumaNotas/notas.length;
     }
 
+    /**
+     * método que indica si el alumno esta aprobado o no en función de su nota media actual.
+     */
+    public String aprobado()
+    {
+
+        String mensaje ="APROBADO!!!!!!!!";
+        if (notaMedia() < 5)
+        {
+            mensaje = "SUSPENSO!!!!!!";
+        }
+        return mensaje;
+    }
+
 }
