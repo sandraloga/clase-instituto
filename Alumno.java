@@ -67,4 +67,24 @@ public class Alumno
         return mensaje;
     }
 
+    /**
+     * método que muestra todos los datos del alumno: nombe, edad, numero de clase, notas, nota media y si esta o no aprobado.
+     */
+    public void muestraDatos()
+    {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Numero de clase: " + numeroClase);
+        System.out.println("-------NOTAS---------");
+        for(int index = 0; index < notas.length; index++)
+        {
+            System.out.println("Nota numero "+ (index+1) + " : " + notas[index]);
+        }
+        System.out.println("===========================");
+        System.out.println("Nota media: " + notaMedia());
+        System.out.println(aprobado());
+        System.out.println("*************************************************************************************");
+
+    }
+
 }
