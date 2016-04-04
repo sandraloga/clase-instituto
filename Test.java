@@ -26,10 +26,10 @@ public class Test
 
         Random aleatorio = new Random();
 
-        for (int i = 0 ; i <= 5 ; i++)
+        for (int i = 0 ; i < 5 ; i++)
         {
             int numeros =aleatorio.nextInt(11);
-            int edad =aleatorio.nextInt(70);
+            int edad =aleatorio.nextInt(51)+15;
 
             nombres = new ArrayList<>(Arrays.asList("Maria","Manuel","Sara","Julio","Pilar","Tino",
                     "Sandra","Fernando","Amparo","Ricardo","Marta"));

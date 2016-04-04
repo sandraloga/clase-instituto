@@ -84,7 +84,8 @@ public class Alumno
         System.out.println("Nota media: " + notaMedia());
         System.out.println(aprobado());
         System.out.println("*************************************************************************************");
-
+         
+        numeroClase++;
     }
 
 }
